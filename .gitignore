@@ -1,0 +1,14 @@
+# Виртуальное окружение (Библиотеки)
+venv/
+.venv/
+
+# Среда разработки PyCharm
+.idea/
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# Локальные файлы конфигурации и данных
+config.ini
+sales-data.csv
