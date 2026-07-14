@@ -23,4 +23,4 @@ if 1 <= today.weekday() <= 5:
     }
 
     df = pd.DataFrame(data)
-    df.to_csv('sales-data.csv', index=False)
+    df.to_csv(os.path.join(dirname, 'sales-data.csv'), index=False)
