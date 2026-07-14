@@ -7,8 +7,10 @@ import configparser
 import yfinance as yf
 
 
+dirname = os.path.dirname(__file__)
+
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.join(dirname, 'config.ini'))
 
 SALES_PATH = config['Files']['SALES_PATH']
 COMPANIES = eval(config['Companies']['COMPANIES'])
