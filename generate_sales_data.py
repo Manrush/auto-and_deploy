@@ -1,11 +1,14 @@
 from datetime import datetime, timedelta
 from random import randint
 
+import os
 import pandas as pd
 import configparser
 
+dirname = os.path.dirname(__file__)
+
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.join(dirname, 'config.ini'))
 COMPANIES = eval(config['Companies']['COMPANIES'])
 
 today = datetime.today()
